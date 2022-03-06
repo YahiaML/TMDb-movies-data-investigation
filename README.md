@@ -1,5 +1,4 @@
-This data was cleaned from original data on Kaggle: https://www.kaggle.com/tmdb/tmdb-movie-metadata.
-
+# TMDb-movies-data-investigation
 ## Dataset Description
 **TMDb movie data** is a dataset containing 21 columns for 10866 Movies,
 
@@ -40,3 +39,5 @@ which are :
 3. Which properties affects the movie vote average?
 4. Which stars have the highest vote average movies?
 5. Which directors have the highest vote average movies?
+
+NOTE: This data was cleaned from original data on Kaggle: https://www.kaggle.com/tmdb/tmdb-movie-metadata.
