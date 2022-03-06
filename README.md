@@ -1,63 +1,42 @@
-# Bike-share-analysis
-This is an exploratory data analysis program for US Bike share data of 2017
+This data was cleaned from original data on Kaggle: https://www.kaggle.com/tmdb/tmdb-movie-metadata.
 
-**********************
-Bike Share Data:
+## Dataset Description
+**TMDb movie data** is a dataset containing 21 columns for 10866 Movies,
 
-Over the past decade, bicycle-sharing systems have been growing in number and popularity in cities across the world.
-Bicycle-sharing systems allow users to rent bicycles on a very short-term basis for a price.
-This allows people to borrow a bike from point A and return it at point B, though they can also return it to the same location if they'd like to just go for a ride.
-Regardless, each bike can serve several users per day.
+which are :
 
-Thanks to the rise in information technologies, it is easy for a user of the system to access a dock within the system to unlock or return bicycles.
-These technologies also provide a wealth of data that can be used to explore how these bike-sharing systems are used.
 
-In this project, i will use data provided by Motivate, a bike share system provider for many major cities in the United States, to uncover bike share usage patterns.
-i will compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
-**********************
+```
+[id', 'imdb_id', 'popularity', 'budget', 'revenue', 'original_title',
+       'cast', 'homepage', 'director', 'tagline', 'keywords', 'overview',
+       'runtime', 'genres', 'production_companies', 'release_date',
+       'vote_count', 'vote_average', 'release_year', 'budget_adj',
+       'revenue_adj]
+```
 
-The Datasets:
+***These columns can be classified as the following :***
 
-Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
+**1.** Significant columns for this analysis :
+```
+['popularity', 'budget', 'revenue', 'genres', 'vote_average' ]
+```
 
-    Start Time (e.g., 2017-01-01 00:07:57)
-    End Time (e.g., 2017-01-01 00:20:53)
-    Trip Duration (in seconds - e.g., 776)
-    Start Station (e.g., Broadway & Barry Ave)
-    End Station (e.g., Sedgwick St & North Ave)
-    User Type (Subscriber or Customer)
+**2.** Helpful columns for this analysis :
+```
+['original_title', 'cast','director','runtime', 'production_companies', 'release_date',
+        'vote_count', 'release_year', 'budget_adj','revenue_adj]
+```
+**3.** Columns have nothing to provide us for this analysis: 
 
-The Chicago and New York City files also have the following two columns:
+```
+["id", 	"imdb_id", 	"homepage", "tagline", "keywords",	"overview"]
+```
 
-    Gender
-    Birth Year
+##Question(s) for Analysis
 
-Data for the first 10 rides in the new_york_city.csv file
-
-You will learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics.
-In this project, i'll provide the following information:
-
-#1 Popular times of travel (i.e., occurs most often in the start time)
-
-    most common month
-    most common day of week
-    most common hour of day
-
-#2 Popular stations and trip
-
-    most common start station
-    most common end station
-    most common trip from start to end (i.e., most frequent combination of start station and end station)
-
-#3 Trip duration
-
-    total travel time
-    average travel time
-
-#4 User info
-
-    counts of each user type
-    counts of each gender (only available for NYC and Chicago)
-    earliest, most recent, most common year of birth (only available for NYC and Chicago)
-
+1. Which genres are most popular from year to year?
+2. Are the high revenue related to the high popularity?
+3. Which properties affects the movie vote average?
+4. Which stars have the highest vote average movies?
+5. Which directors have the highest vote average movies?
