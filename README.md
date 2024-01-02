@@ -1,43 +1,34 @@
-# TMDb-movies-data-investigation
-## Dataset Description
-**TMDb movie data** is a dataset containing 21 columns for 10866 Movies,
+# Movie Data Analysis
 
-which are :
+## Project Overview
 
+The Movie Data Analysis project is an exploration of the TMDb (The Movie Database) dataset using Python. The goal is to gain insights into various aspects of the movie industry, such as popular genres, correlations between revenue and popularity, and the impact of factors like budget, stars, and directors on movie ratings.
 
+## Tools and Technologies Used
 
-```
-[id', 'imdb_id', 'popularity', 'budget', 'revenue', 'original_title',
-       'cast', 'homepage', 'director', 'tagline', 'keywords', 'overview',
-       'runtime', 'genres', 'production_companies', 'release_date',
-       'vote_count', 'vote_average', 'release_year', 'budget_adj',
-       'revenue_adj]
-```
+1. **Python:** The entire project is implemented using the Python programming language for its versatility in data analysis and manipulation.
 
-***These columns can be classified as the following :***
+2. **Pandas:** Pandas, a powerful data manipulation library, is utilized for handling and organizing the TMDb dataset. It facilitates easy analysis, cleaning, and visualization of the data.
 
-**1.** Significant columns for this analysis :
-```
-['popularity', 'budget', 'revenue', 'genres', 'vote_average' ]
-```
+3. **Matplotlib and Seaborn:** These libraries are employed for creating visualizations to better understand patterns and trends in the dataset.
 
-**2.** Helpful columns for this analysis :
-```
-['original_title', 'cast','director','runtime', 'production_companies', 'release_date',
-        'vote_count', 'release_year', 'budget_adj','revenue_adj]
-```
-**3.** Columns have nothing to provide us for this analysis: 
+4. **Beautiful Soup and Selenium:** Beautiful Soup is used for parsing HTML, while Selenium is employed for dynamic interaction with web pages, ensuring accurate data extraction from the TMDb website.
 
-```
-["id", 	"imdb_id", 	"homepage", "tagline", "keywords",	"overview"]
-```
+## Key Features and Functionality
 
-##Question(s) for Analysis
+1. **Genre Analysis:** The project explores the popularity of different movie genres over the years, providing insights into evolving audience preferences.
 
-1. Which genres are most popular from year to year?
-2. Are the high revenue related to the high popularity?
-3. Which properties affects the movie vote average?
-4. Which stars have the highest vote average movies?
-5. Which directors have the highest vote average movies?
+2. **Correlation Analysis:** Examining the relationship between movie revenue and popularity to understand if high revenue correlates with high popularity.
 
-NOTE: This data was cleaned from original data on Kaggle: https://www.kaggle.com/tmdb/tmdb-movie-metadata.
+3. **Vote Average Investigation:** Investigating the factors influencing movie vote averages, including the impact of popularity and budget.
+
+4. **Star and Director Ratings:** Identifying the stars and directors with the highest-rated movies, both in terms of total votes and average votes.
+
+## Conclusion
+
+The Movie Data Analysis project showcases the capabilities of Python and data analysis libraries in exploring and extracting valuable insights from the TMDb dataset. By combining static parsing with Beautiful Soup and dynamic interaction with Selenium, the project provides a comprehensive analysis of the movie industry. Whether you are interested in understanding genre trends, correlations between revenue and popularity, or the influence of stars and directors, this project serves as a valuable resource for movie enthusiasts and data analysts alike.
+
+## Limitations
+
+- The analysis might be impacted by dropped rows, missing budget and revenue values, and the removal of values after the pipe (|) characters in genres.
+- Users are encouraged to explore the dataset further and consider potential biases introduced during data cleaning.
