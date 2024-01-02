@@ -25,7 +25,7 @@ The Movie Data Analysis project is an exploration of the TMDb (The Movie Databas
 
 ## Conclusion
 
-The Movie Data Analysis project showcases the capabilities of Python and data analysis libraries in exploring and extracting valuable insights from the TMDb dataset. By combining static parsing with Beautiful Soup and dynamic interaction with Selenium, the project provides a comprehensive analysis of the movie industry. Whether you are interested in understanding genre trends, correlations between revenue and popularity, or the influence of stars and directors, this project serves as a valuable resource for movie enthusiasts and data analysts alike.
+The Movie Data Analysis project showcases the capabilities of Python and data analysis libraries in exploring and extracting valuable insights from the TMDb dataset. The project provides a comprehensive analysis of the movie industry. Whether you are interested in understanding genre trends, correlations between revenue and popularity, or the influence of stars and directors, this project serves as a valuable resource for movie enthusiasts and data analysts alike.
 
 ## Limitations
 
