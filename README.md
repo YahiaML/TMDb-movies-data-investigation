@@ -12,7 +12,6 @@ The Movie Data Analysis project is an exploration of the TMDb (The Movie Databas
 
 3. **Matplotlib and Seaborn:** These libraries are employed for creating visualizations to better understand patterns and trends in the dataset.
 
-4. **Beautiful Soup and Selenium:** Beautiful Soup is used for parsing HTML, while Selenium is employed for dynamic interaction with web pages, ensuring accurate data extraction from the TMDb website.
 
 ## Key Features and Functionality
 
